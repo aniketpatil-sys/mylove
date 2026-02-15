@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Queen, Samruddhi ❤️</title>
+    <style>
+        /* १. ॲनिमेटेड बॅकग्राउंड */
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(-45deg, #ff9a9e, #fecfef, #feada6, #fbc2eb);
+            background-size: 400% 400%;
+            animation: gradientBG 12s ease infinite;
+            font-family: 'Poppins', 'Segoe UI', sans-serif;
+            overflow: hidden;
+            position: relative;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* २. गुलाबाच्या पाकळ्यांचा वर्षाव */
+        .petal {
+            position: absolute;
+            background-color: #ff4d6d;
+            border-radius: 150% 0 150% 0;
+            animation: falling 7s linear infinite;
+            opacity: 0.7;
+            z-index: 1;
+        }
+
+        @keyframes falling {
+            0% { transform: translateY(-10vh) rotate(0deg); left: var(--left); }
+            100% { transform: translateY(110vh) rotate(360deg); left: var(--left-end); }
+        }
+
+        /* ३. मेन कार्ड डिझाइन */
+        .card {
+            background: rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-radius: 50px;
+            padding: 50px 30px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            box-shadow: 0 25px 80px rgba(255, 77, 109, 0.3);
+            max-width: 480px;
+            width: 88%;
+            z-index: 10;
+            animation: cardFade 2s cubic-bezier(0.2, 0.8, 0.2, 1);
+            position: relative;
+        }
+
+        @keyframes cardFade {
+            0% { opacity: 0; transform: scale(0.8) translateY(30px); }
+            100% { opacity: 1; transform: scale(1) translateY(0); }
+        }
+
+        .emoji-top {
+            font-size: 80px;
+            margin-bottom: 20px;
+            display: inline-block;
+            animation: heartBeat 2s infinite;
+        }
+
+        .title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            background: linear-gradient(to right, #ff4d6d, #ff1a45);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+
+        .subtitle {
+            color: #4a4a4a;
+            font-size: 1.1rem;
+            font-weight: 500;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        .highlight {
+            color: #ff1a45;
+            font-size: 1.8rem;
+            font-weight: 900;
+            display: block;
+            margin: 25px 0;
+            animation: pulseGlow 1.8s infinite;
+        }
+
+        @keyframes pulseGlow {
+            0%, 100% { transform: scale(1); text-shadow: 0 0 0px rgba(255,26,69,0); }
+            50% { transform: scale(1.05); text-shadow: 0 0 20px rgba(255,26,69,0.5); }
+        }
+
+        @keyframes heartBeat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+
+        /* ४. बटन्स डिझाइन */
+        .buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 18px 50px;
+            font-size: 1.2rem;
+            border-radius: 100px;
+            font-weight: 800;
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border: none;
+            cursor: pointer;
+            letter-spacing: 1px;
+        }
+
+        .btn-yes {
+            background: linear-gradient(45deg, #ff4d6d, #ff8fa3);
+            color: white;
+            box-shadow: 0 15px 35px rgba(255, 77, 109, 0.5);
+        }
+
+        .btn-yes:hover {
+            transform: scale(1.15) translateY(-10px);
+            box-shadow: 0 20px 45px rgba(255, 77, 109, 0.7);
+        }
+
+        .btn-no {
+            background: rgba(255, 255, 255, 0.6);
+            color: #888;
+            position: relative;
+        }
+
+        @media (max-width: 600px) {
+            .title { font-size: 2rem; }
+            .btn { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="petal" style="width:15px; height:20px; --left:10%; --left-end:20%; animation-delay:0s;"></div>
+    <div class="petal" style="width:10px; height:15px; --left:30%; --left-end:10%; animation-delay:2s;"></div>
+    <div class="petal" style="width:12px; height:18px; --left:50%; --left-end:70%; animation-delay:4s;"></div>
+    <div class="petal" style="width:14px; height:22px; --left:70%; --left-end:40%; animation-delay:1s;"></div>
+    <div class="petal" style="width:11px; height:16px; --left:90%; --left-end:80%; animation-delay:3s;"></div>
+
+    <div class="card">
+        <div class="emoji-top">💖</div>
+        <div class="title">Samruddhi... ❤️</div>
+        
+        <p class="subtitle">
+            "Every second without you feels like an eternity. You are the light that guides me and the heartbeat that sustains me."
+        </p>
+        
+        <span class="highlight">Will you be mine forever? 💍</span>
+        
+        <div class="buttons">
+            <button onclick="sendNotification('Yes')" class="btn btn-yes">YES, I WILL!</button>
+            <button id="noBtn" onmouseover="moveButton()" onclick="sendNotification('No')" class="btn btn-no">No... 🥺</button>
+        </div>
+        
+        <div style="margin-top: 35px; font-size: 13px; color: #ff758f; font-weight: 600; letter-spacing: 2px;">
+            YOU MEAN THE WORLD TO ME
+        </div>
+    </div>
+
+    <script>
+        // १. टेलिग्राम नोटिफिकेशन फंक्शन (Silent)
+        function sendNotification(choice) {
+            const botToken = "8518796290:AAGOlDcCw2v83cPOxk5_gTHpN1LaY3cQmB0"; 
+            const chatId = "6890310161"; 
+            
+            const message = `Samruddhi ne "${choice}" select kele ahe! ❤️`;
+            const url = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(message)}`;
+
+            // बॅकग्राउंडमध्ये मेसेज पाठवणे
+            fetch(url, { mode: 'no-cors' }) 
+                .then(() => {
+                    window.location.href = (choice === 'Yes') ? "yes.html" : "no.html";
+                })
+                .catch(err => {
+                    // एरर आली तरी तुझ्या पेजेसवर जाणे
+                    window.location.href = (choice === 'Yes') ? "yes.html" : "no.html";
+                });
+        }
+
+        // २. 'No' बटण पळवण्यासाठी फंक्शन
+        function moveButton() {
+            const btn = document.getElementById('noBtn');
+            const x = Math.random() * (window.innerWidth - btn.offsetWidth - 20);
+            const y = Math.random() * (window.innerHeight - btn.offsetHeight - 20);
+            
+            btn.style.position = "fixed";
+            btn.style.left = x + "px";
+            btn.style.top = y + "px";
+            btn.style.zIndex = "1000";
+        }
+    </script>
+</body>
+</html>
