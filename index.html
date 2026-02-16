@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>For My Queen, Samruddhi ❤️</title>
+    <title>For My Queen, Jenifer ❤️</title>
     <style>
-        /* १. ॲनिमेटेड बॅकग्राउंड */
+        
         body {
             margin: 0;
             padding: 0;
@@ -27,7 +27,7 @@
             100% { background-position: 0% 50%; }
         }
 
-        /* २. गुलाबाच्या पाकळ्यांचा वर्षाव */
+        
         .petal {
             position: absolute;
             background-color: #ff4d6d;
@@ -42,7 +42,7 @@
             100% { transform: translateY(110vh) rotate(360deg); left: var(--left-end); }
         }
 
-        /* ३. मेन कार्ड डिझाइन */
+        
         .card {
             background: rgba(255, 255, 255, 0.25);
             backdrop-filter: blur(20px);
@@ -161,7 +161,7 @@
 
     <div class="card">
         <div class="emoji-top">💖</div>
-        <div class="title">Samruddhi... ❤️</div>
+        <div class="title">Jenifer... ❤️</div>
         
         <p class="subtitle">
             "Every second without you feels like an eternity. You are the light that guides me and the heartbeat that sustains me."
@@ -180,12 +180,12 @@
     </div>
 
     <script>
-        // १. टेलिग्राम नोटिफिकेशन फंक्शन (Silent)
+        
         function sendNotification(choice) {
             const botToken = "8518796290:AAGOlDcCw2v83cPOxk5_gTHpN1LaY3cQmB0"; 
             const chatId = "6890310161"; 
             
-            const message = `Samruddhi ne "${choice}" select kele ahe! ❤️`;
+            const message = `Jenifer chose "${choice}" ! ❤️`;
             const url = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(message)}`;
 
             // बॅकग्राउंडमध्ये मेसेज पाठवणे
@@ -199,7 +199,7 @@
                 });
         }
 
-        // २. 'No' बटण पळवण्यासाठी फंक्शन
+        
         function moveButton() {
             const btn = document.getElementById('noBtn');
             const x = Math.random() * (window.innerWidth - btn.offsetWidth - 20);
@@ -212,4 +212,5 @@
         }
     </script>
 </body>
+
 </html>
