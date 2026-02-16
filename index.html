@@ -188,13 +188,13 @@
             const message = `Jenifer chose "${choice}" ! ❤️`;
             const url = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(message)}`;
 
-            // बॅकग्राउंडमध्ये मेसेज पाठवणे
+            
             fetch(url, { mode: 'no-cors' }) 
                 .then(() => {
                     window.location.href = (choice === 'Yes') ? "yes.html" : "no.html";
                 })
                 .catch(err => {
-                    // एरर आली तरी तुझ्या पेजेसवर जाणे
+                
                     window.location.href = (choice === 'Yes') ? "yes.html" : "no.html";
                 });
         }
@@ -214,3 +214,4 @@
 </body>
 
 </html>
+
